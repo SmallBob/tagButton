@@ -283,8 +283,6 @@ static CGFloat MAXTagCount = 50 ;
         return NO;
     }
     
-    
-    
     if ([NSStringFromRange(range) isEqualToString:@"{0, 0}"]) {
         self.assBtn.frame = CGRectMake(textField.frame.origin.x, textField.frame.origin.y+textField.frame.size.height, textField.frame.size.width,textField.frame.size.height);
         [self addSubview:self.assBtn];
@@ -306,8 +304,6 @@ static CGFloat MAXTagCount = 50 ;
             
         }];
     }
-    
-    
     
     if ([string isEqualToString:@","]&&range.location != 0 ) {
         [self textFieldShouldReturn:self.textField];
