@@ -15,6 +15,11 @@
 		40EDE45A1C9B9EF0003A4C2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EDE4581C9B9EF0003A4C2A /* LaunchScreen.storyboard */; };
 		40EDE4651C9B9EF0003A4C2A /* tagButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EDE4641C9B9EF0003A4C2A /* tagButtonTests.m */; };
 		40EDE4701C9B9EF0003A4C2A /* tagButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EDE46F1C9B9EF0003A4C2A /* tagButtonUITests.m */; };
+		40EDE4841C9B9F86003A4C2A /* WKTagButtonTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EDE4831C9B9F86003A4C2A /* WKTagButtonTextField.m */; };
+		40EDE4871C9BA026003A4C2A /* WKTagEdtingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EDE4861C9BA026003A4C2A /* WKTagEdtingView.m */; };
+		40EDE48A1C9BB164003A4C2A /* WKCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EDE4891C9BB164003A4C2A /* WKCollectionViewFlowLayout.m */; };
+		40EDE48D1C9BBF9E003A4C2A /* WKTagCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EDE48C1C9BBF9E003A4C2A /* WKTagCollectionViewCell.m */; };
+		40EDE4901C9BC044003A4C2A /* WKTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EDE48F1C9BC044003A4C2A /* WKTagListView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		40EDE46B1C9B9EF0003A4C2A /* tagButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tagButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EDE46F1C9B9EF0003A4C2A /* tagButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tagButtonUITests.m; sourceTree = "<group>"; };
 		40EDE4711C9B9EF0003A4C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40EDE4821C9B9F86003A4C2A /* WKTagButtonTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTagButtonTextField.h; sourceTree = "<group>"; };
+		40EDE4831C9B9F86003A4C2A /* WKTagButtonTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTagButtonTextField.m; sourceTree = "<group>"; };
+		40EDE4851C9BA026003A4C2A /* WKTagEdtingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTagEdtingView.h; sourceTree = "<group>"; };
+		40EDE4861C9BA026003A4C2A /* WKTagEdtingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTagEdtingView.m; sourceTree = "<group>"; };
+		40EDE4881C9BB164003A4C2A /* WKCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		40EDE4891C9BB164003A4C2A /* WKCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		40EDE48B1C9BBF9E003A4C2A /* WKTagCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTagCollectionViewCell.h; sourceTree = "<group>"; };
+		40EDE48C1C9BBF9E003A4C2A /* WKTagCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTagCollectionViewCell.m; sourceTree = "<group>"; };
+		40EDE48E1C9BC044003A4C2A /* WKTagListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTagListView.h; sourceTree = "<group>"; };
+		40EDE48F1C9BC044003A4C2A /* WKTagListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTagListView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,7 @@
 		40EDE4491C9B9EF0003A4C2A /* tagButton */ = {
 			isa = PBXGroup;
 			children = (
+				40EDE4811C9B9F6B003A4C2A /* tagButtons */,
 				40EDE44D1C9B9EF0003A4C2A /* AppDelegate.h */,
 				40EDE44E1C9B9EF0003A4C2A /* AppDelegate.m */,
 				40EDE4501C9B9EF0003A4C2A /* ViewController.h */,
@@ -138,6 +154,23 @@
 				40EDE4711C9B9EF0003A4C2A /* Info.plist */,
 			);
 			path = tagButtonUITests;
+			sourceTree = "<group>";
+		};
+		40EDE4811C9B9F6B003A4C2A /* tagButtons */ = {
+			isa = PBXGroup;
+			children = (
+				40EDE4821C9B9F86003A4C2A /* WKTagButtonTextField.h */,
+				40EDE4831C9B9F86003A4C2A /* WKTagButtonTextField.m */,
+				40EDE4851C9BA026003A4C2A /* WKTagEdtingView.h */,
+				40EDE4861C9BA026003A4C2A /* WKTagEdtingView.m */,
+				40EDE4881C9BB164003A4C2A /* WKCollectionViewFlowLayout.h */,
+				40EDE4891C9BB164003A4C2A /* WKCollectionViewFlowLayout.m */,
+				40EDE48B1C9BBF9E003A4C2A /* WKTagCollectionViewCell.h */,
+				40EDE48C1C9BBF9E003A4C2A /* WKTagCollectionViewCell.m */,
+				40EDE48E1C9BC044003A4C2A /* WKTagListView.h */,
+				40EDE48F1C9BC044003A4C2A /* WKTagListView.m */,
+			);
+			path = tagButtons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40EDE4871C9BA026003A4C2A /* WKTagEdtingView.m in Sources */,
+				40EDE4841C9B9F86003A4C2A /* WKTagButtonTextField.m in Sources */,
 				40EDE4521C9B9EF0003A4C2A /* ViewController.m in Sources */,
 				40EDE44F1C9B9EF0003A4C2A /* AppDelegate.m in Sources */,
+				40EDE48D1C9BBF9E003A4C2A /* WKTagCollectionViewCell.m in Sources */,
+				40EDE48A1C9BB164003A4C2A /* WKCollectionViewFlowLayout.m in Sources */,
 				40EDE44C1C9B9EF0003A4C2A /* main.m in Sources */,
+				40EDE4901C9BC044003A4C2A /* WKTagListView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
