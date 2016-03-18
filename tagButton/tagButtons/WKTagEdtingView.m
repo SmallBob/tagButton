@@ -176,9 +176,6 @@ static CGFloat MAXTagCount = 50 ;
         frame.origin.y = self.bounds.size.width - widthPart > btn.frame.size.width ? lastBtn.frame.origin.y :lastBtn.frame.origin.y + lastBtn.frame.size.height + WKDistanceLength;
         btn.frame = frame;
         
-        
-    
-    
     }
     
     //添加btn
