@@ -202,12 +202,19 @@ static CGFloat MAXTagCount = 50 ;
     
 }
 
+#pragma mark - 点击按钮变动
 -(void)tagBtnClick:(UIButton*)sender
 {
+    
+    //点击 做判定是否select
+    
     [sender removeFromSuperview];
     [self.btnArray removeObject:sender];
     
     [UIView animateWithDuration:0.1 animations:^{
+        
+        
+        
         [self updateTagsFrame];
         self.textField.frame =  [self updateTextFrame];
         self.assBtn.frame = CGRectMake(self.textField.frame.origin.x, self.textField.frame.origin.y+self.textField.frame.size.height, self.textField.frame.size.width, self.textField.frame.size.height);
@@ -283,6 +290,7 @@ static CGFloat MAXTagCount = 50 ;
         return NO;
     }
     
+    /*
     if ([NSStringFromRange(range) isEqualToString:@"{0, 0}"]) {
         self.assBtn.frame = CGRectMake(textField.frame.origin.x, textField.frame.origin.y+textField.frame.size.height, textField.frame.size.width,textField.frame.size.height);
         [self addSubview:self.assBtn];
@@ -304,6 +312,8 @@ static CGFloat MAXTagCount = 50 ;
             
         }];
     }
+     
+     */
     
     if ([string isEqualToString:@","]&&range.location != 0 ) {
         [self textFieldShouldReturn:self.textField];

@@ -32,6 +32,10 @@
     self.listView.frame = CGRectMake(10, 260, self.view.bounds.size.width-20, 200);
     self.listView.canSelectTags = YES;
     
+    
+    
+    //listView 里面包含collectionView  数据变动 记得 reloadData
+    
     [self.listView.tags addObjectsFromArray:@[@"NSString",@"NSArray",@"UILabel"]];
     
     __weak typeof(self)WeakSelf = self;
@@ -39,6 +43,7 @@
     [self.listView setCompletionBlockWithSelected:^(NSInteger index) {
         NSLog(@"----%d---",index);
         
+        //增加新btn 标签
         [WeakSelf.edtingView creatBtnWithTitle:WeakSelf.listView.tags[index]];
         
         
@@ -47,6 +52,8 @@
     [self.listView.collectionView reloadData];
     
     [self.view addSubview:self.listView];
+    
+    
     
     // Do any additional setup after loading the view, typically from a nib.
 }
